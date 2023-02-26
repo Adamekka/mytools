@@ -1,0 +1,13 @@
+[package]
+name = "mytools"
+version = "0.1.0"
+authors = ["Adam Cvikl <adam.wasd4@gmail.com"]
+categories = []
+description = "My frequently used functions packed in 1 library"
+documentation = ""
+license = "GPL-3.0"
+repository = "https://github.com/Adamekka/mytools"
+edition = "2021"
+
+[dependencies]
+owo-colors = "3.5.0"

@@ -1,8 +1,11 @@
 #![allow(unused_macros)]
 
+pub extern crate owo_colors;
+
+#[macro_export]
 macro_rules! pretty_panic {
     ($msg:expr) => {
-        use owo_colors::OwoColorize;
+        use mytools::macros::owo_colors::OwoColorize;
         print!("{}", "Error: ".red().bold());
         println!("{}", format!($msg));
         #[cfg(debug_assertions)]

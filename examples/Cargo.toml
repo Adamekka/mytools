@@ -1,0 +1,11 @@
+[package]
+name = "mytools-examples"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mytools = { path = "../mytools" }
+
+[[example]]
+name = "macros-pretty_panic"
+path = "macros/pretty_panic.rs"
