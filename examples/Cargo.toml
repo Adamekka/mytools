@@ -17,3 +17,7 @@ path = "macros/warn.rs"
 [[example]]
 name = "macros-question_yes_no"
 path = "macros/question_yes_no.rs"
+
+[[example]]
+name = "env-get_home_folder"
+path = "env/get_home_folder.rs"
