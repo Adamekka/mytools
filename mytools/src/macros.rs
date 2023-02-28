@@ -2,6 +2,26 @@
 
 pub extern crate owo_colors;
 
+/// A macro to print a pretty panic message.
+///
+/// # Examples
+///
+/// ```should_panic
+/// #[macro_use]
+/// extern crate mytools;
+///
+/// fn main() {
+///    pretty_panic!("Error message");
+/// }
+/// ```
+///
+/// # Output
+///
+/// ```text
+/// Error: Error message
+/// ```
+///
+/// "Error: " is red and bold.
 #[macro_export]
 macro_rules! pretty_panic {
     ($msg:expr) => {
