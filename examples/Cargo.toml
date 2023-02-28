@@ -9,3 +9,7 @@ mytools = { path = "../mytools" }
 [[example]]
 name = "macros-pretty_panic"
 path = "macros/pretty_panic.rs"
+
+[[example]]
+name = "macros-warn"
+path = "macros/warn.rs"

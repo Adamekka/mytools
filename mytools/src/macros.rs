@@ -34,3 +34,32 @@ macro_rules! pretty_panic {
         std::process::exit(1);
     };
 }
+
+/// A macro to print a pretty warning message.
+///
+/// # Examples
+///
+/// ```no_run
+/// #[macro_use]
+/// extern crate mytools;
+///
+/// fn main() {
+///    warn!("Warning message");
+/// }
+/// ```
+///
+/// # Output
+///
+/// ```text
+/// Warning: Warning message
+/// ```
+///
+/// "Warning: " is yellow and bold.
+#[macro_export]
+macro_rules! warn {
+    ($msg:expr) => {
+        use mytools::macros::owo_colors::OwoColorize;
+        print!("{}", "Warning: ".yellow().bold());
+        println!("{}", format!($msg));
+    };
+}
