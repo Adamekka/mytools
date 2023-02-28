@@ -13,3 +13,7 @@ path = "macros/pretty_panic.rs"
 [[example]]
 name = "macros-warn"
 path = "macros/warn.rs"
+
+[[example]]
+name = "macros-question_yes_no"
+path = "macros/question_yes_no.rs"

@@ -13,4 +13,9 @@ mod tests {
     fn test_warn() {
         warn!("This is a test");
     }
+
+    #[allow(dead_code)]
+    fn test_question_yes_no() {
+        todo!(); // TODO
+    }
 }
