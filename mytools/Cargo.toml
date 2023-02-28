@@ -11,3 +11,4 @@ edition = "2021"
 
 [dependencies]
 owo-colors = "3.5.0"
+question = "0.2.2"
