@@ -9,13 +9,13 @@ mod tests {
         pretty_panic!("This is a test");
     }
 
-    #[test]
-    fn test_warn() {
-        warn!("This is a test");
-    }
-
     #[allow(dead_code)]
     fn test_question_yes_no() {
         todo!(); // TODO
+    }
+
+    #[test]
+    fn test_warn() {
+        warn!("This is a test");
     }
 }
