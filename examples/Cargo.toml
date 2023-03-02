@@ -25,3 +25,9 @@ path = "macros/warn.rs"
 [[example]]
 name = "macros-question_yes_no"
 path = "macros/question_yes_no.rs"
+
+# Sorts
+
+[[example]]
+name = "sorts-quicksort"
+path = "sorts/quicksort.rs"
