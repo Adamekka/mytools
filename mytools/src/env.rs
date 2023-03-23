@@ -1,4 +1,6 @@
-/// Get the home folder of the current user
+/// Get the home folder of the current user.
+/// On Windows, the path is converted to Unix style
+/// (i.e. C:\Users\username -> C:/Users/username)
 ///
 /// # Examples
 ///
@@ -26,7 +28,11 @@ pub fn get_home_folder() -> String {
     return std::env::var("HOME").expect("$HOME environment variable isn't set");
 
     #[cfg(target_family = "windows")]
-    return std::env::var("USERPROFILE").expect("$USERPROFILE environment variable isn't set");
+    {
+        let home =
+            std::env::var("USERPROFILE").expect("$USERPROFILE environment variable isn't set");
+        return home.replace('\\', "/");
+    }
 
     #[cfg(target_family = "wasm")]
     pretty_panic!("WebAssembly isn't supported");
